@@ -106,7 +106,7 @@ body
    
 #mainC
 {
-    width: 67.5%;
+    /* width: 67.5%; */
     height: 100%;
 
     display: flex;
@@ -222,7 +222,7 @@ img
 {
     width:58%;
     height: 100%;
-    background-color: green;
+    /* background-color: green; */
 
     display: flex;
     flex-direction: row;
@@ -242,4 +242,99 @@ img
 {
     color:rgba(0,105,255,255);
     cursor: pointer;
+}
+
+
+
+/* telefon na výšku */
+
+@media (max-width: 575px)
+{
+    #navbar-c2
+    {
+        background-color: pink;
+    }
+
+    #mainC
+    {
+        width: 95%;
+    }
+}
+
+/* telefon na šířku */
+
+@media screen and (min-width: 576px) and (max-width: 767px)
+{
+
+    #navbar-c2
+    {
+        background-color: orange;
+    }
+
+    #mainC
+    {
+        width: 90%;
+    }
+
+
+}
+
+/* Tablet */ 
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+    #navbar-c2
+    {
+        background-color: yellowgreen;
+    }
+
+    #mainC
+    {
+        width: 85%;
+    }
+
+}
+
+/* notebook/desktop */ 
+@media screen and (min-width: 992px) and (max-width: 1199px)
+{
+
+    #navbar-c2
+    {
+        background-color: yellow;
+    }
+
+    #mainC
+    {
+        width: 80%;
+    }
+
+}
+
+/* desktop s velkým monitorem */ 
+@media screen and (min-width: 1200px) and (max-width: 1400px)
+{
+    #navbar-c2
+    {
+        background-color: brown;
+    }
+
+    #mainC
+    {
+        width: 75%;
+    }
+    
+}
+
+/* desktop s velkým monitorem */ 
+@media (min-width: 1400px)
+{
+   #navbar-c2
+   {
+    background-color: blue;
+   }
+
+   #mainC
+   {
+     width: 67.5%;
+   }
 }
