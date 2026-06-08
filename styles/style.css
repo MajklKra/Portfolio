@@ -58,8 +58,6 @@
   font-weight: 400;
 }
 
-
-
 body
 {
     margin: 0px;
@@ -90,12 +88,29 @@ body
     ); */
 
 
-    background: radial-gradient(
+    /* background: radial-gradient(
         circle at 80% 50%,
         rgba(187,214,255,1) 0%,
         rgba(220,235,255,1) 50%,
         rgba(249,251,255,1) 100%
-    );
+    );  */
+
+    background:
+                radial-gradient(
+                    700px 520px at 15% 45%,
+                    rgba(179, 209, 255, 0.72) 0%,
+                    rgba(190, 216, 255, 0.52) 28%,
+                    rgba(210, 228, 255, 0.32) 48%,
+                    rgba(232, 241, 255, 0.18) 68%,
+                    rgba(249, 251, 255, 0) 100%
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(245, 249, 255, 1) 0%,
+                    rgba(249, 251, 255, 1) 100%
+                );
+
+    /* background-color: rgba(249,251,255,1); */
 
     display: flex;
     flex-direction: row;
@@ -173,6 +188,8 @@ img
     /* display: none; */
 
     border-radius: 5px;
+
+    /* background-color: rgba(181,211,255,1); */
 }
 
 #job-p
@@ -185,6 +202,7 @@ img
     line-height: 1.5;
 
     text-align: justify;
+
 }
 
 #AboutMeName
@@ -209,18 +227,20 @@ img
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    margin-top: 80px;
 }
 
 #navbar-c1
 {
-    width:42%;
+    /* width:42%; */
     height: 100%;
     background-color: blue;
 }
 
 #navbar-c2
 {
-    width:58%;
+    /* width:58%; */
     height: 100%;
     /* background-color: green; */
 
@@ -244,20 +264,325 @@ img
     cursor: pointer;
 }
 
+#hamburgerImg
+{
+    color: rgba(106,166,255,1) !important;
+}
+
+#hamburgerBtn
+{
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+#languanges
+{
+    height: auto;
+    width: 100%;
+}
+
+
+#languangeTitle
+{
+    /* font-family: 'Chewy'; */
+    font-family: 'Bree Serif';
+    font-weight: 700;
+    font-size:  24px;
+
+    color: black;
+}
+
+#languanges-p
+{
+    font-family: 'Lexend';
+    font-weight: 500;
+    font-size:  16px;
+    color: #888888;
+
+    line-height: 1.5;
+
+    text-align: justify;
+    
+}
+
+#languangesList
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* background-color: red; */
+}
+
+
+#C
+{
+    width: 50px;
+    height: auto;
+    color: white;
+
+    border: 2px solid rgba(106,166,255,1);
+    border-radius: 10px;
+    background-color: rgba(106,166,255,1);
+    
+    box-shadow: 1px 1px 3px gray;
+}
+
+#Cplus
+{
+    width: 50px;
+    height: auto;
+    color: white;
+
+    border: 2px solid rgba(106,166,255,1);
+    border-radius: 10px;
+    background-color: rgba(106,166,255,1);
+    
+    box-shadow: 1px 1px 3px gray;
+}
+
+#Csharp
+{
+    width: 50px;
+    height: auto;
+    color: white;
+
+    border: 2px solid rgba(106,166,255,1);
+    border-radius: 10px;
+    background-color: rgba(106,166,255,1);
+    
+    box-shadow: 1px 1px 3px gray;
+}
+
+#html
+{
+    width: 50px;
+    height: auto;
+
+    color: white;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    background-color: #FFD700;
+    
+    box-shadow: 1px 1px 3px gray;
+}
+
+#css
+{
+    width: 50px;
+    height: auto;
+    color: white;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    background-color: #FFD700;
+    
+    box-shadow: 1px 1px 3px gray;
+}
+
+#JS
+{
+    width: 50px;
+    height: auto;
+    color: white;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    background-color: #FFD700;
+    
+    box-shadow: 1px 1px 3px gray;
+}
+
+#mySQL
+{
+    width: 50px;
+    height: auto;
+    color: white;
+    border: 2px solid rgba(106,166,255,1);
+    border-radius: 10px;
+    background-color: rgba(106,166,255,1);
+    
+    box-shadow: 1px 1px 3px gray;
+
+    padding: 5px;
+
+    box-sizing: border-box;
+
+}
+
+#Oracle
+{
+    width: 50px;
+    height: auto;
+    color: white;
+    border: 2px solid rgba(106,166,255,1);
+    border-radius: 10px;
+    background-color: rgba(106,166,255,1);
+    
+    box-shadow: 1px 1px 3px gray;
+
+    padding: 5px;
+
+    box-sizing: border-box;
+}
+
+#SQLlite
+{
+
+    width: 50px;
+    height: auto;
+    color: white;
+    border: 2px solid rgba(106,166,255,1);
+    border-radius: 10px;
+    background-color: rgba(106,166,255,1);
+    
+    box-shadow: 1px 1px 3px gray;
+
+}
+
+#MSSql
+{
+    width: 50px;
+    height: auto;
+    color: white;
+    border: 2px solid rgba(106,166,255,1);
+    border-radius: 10px;
+    background-color: rgba(106,166,255,1);
+    
+    box-shadow: 1px 1px 3px gray;
+}
+
+#java
+{
+    width: 50px;
+    height: auto;
+    color: white;
+    border: 2px solid rgba(106,166,255,1);
+    border-radius: 10px;
+    background-color: rgba(106,166,255,1);
+    
+    box-shadow: 1px 1px 3px gray;
+
+    padding: 5px;
+
+    box-sizing: border-box;
+}
+
+
+#python2
+{
+    width: 50px;
+    height: auto;
+    color: white;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    background-color: #FFD700;
+    
+    box-shadow: 1px 1px 3px gray;;
+}
+
+#react
+{
+    width: 50px;
+    height: auto;
+    color: white;
+    border: 2px solid rgba(106,166,255,1);
+    border-radius: 10px;
+    background-color: rgba(106,166,255,1);
+    
+    box-shadow: 1px 1px 3px gray;
+
+    padding: 5px;
+
+    box-sizing: border-box;
+}
+
+#angular
+{
+    width: 50px;
+    height: auto;
+    color: white;
+    border: 2px solid rgba(106,166,255,1);
+    border-radius: 10px;
+    background-color: rgba(106,166,255,1);
+    
+    box-shadow: 1px 1px 3px gray;
+}
+
+#languanges-p2
+{
+    font-family: 'Lexend';
+    font-weight: 500;
+    font-size:  16px;
+    color: #888888;
+
+    line-height: 1.5;
+
+    text-align: justify;
+    
+}
+
+#languangesList2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* background-color: blue; */
+}
+
+#languanges-p3
+{
+    font-family: 'Lexend';
+    font-weight: 500;
+    font-size:  16px;
+    color: #888888;
+
+    line-height: 1.5;
+
+    text-align: justify;
+    
+}
+
+
+
 
 
 /* telefon na výšku */
 
 @media (max-width: 575px)
 {
+
+    #navbar-c1
+    {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+
+        background-color: yellow;
+    }
+
     #navbar-c2
     {
+        width: 0%;
         background-color: pink;
+        display: none;
     }
 
     #mainC
     {
         width: 95%;
+    }
+
+    #hamburgerBtn
+    {
+        margin-right: 10px;
     }
 }
 
@@ -266,14 +591,34 @@ img
 @media screen and (min-width: 576px) and (max-width: 767px)
 {
 
+    #navbar-c1
+    {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+
+        background-color: pink;
+    }
+
     #navbar-c2
     {
+
+        width: 0%;
         background-color: orange;
+        display: none;
     }
 
     #mainC
     {
         width: 90%;
+    }
+
+    #hamburgerBtn
+    {
+        margin-right: 10px;
     }
 
 
@@ -282,9 +627,23 @@ img
 /* Tablet */ 
 @media screen and (min-width: 768px) and (max-width: 991px)
 {
+    #navbar-c1
+    {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+
+        background-color: green;
+    }
+   
     #navbar-c2
     {
+        width: 0%;
         background-color: yellowgreen;
+        display: none;
     }
 
     #mainC
@@ -292,14 +651,24 @@ img
         width: 85%;
     }
 
+    #hamburgerBtn
+    {
+        margin-right: 10px;
+    }
+    
 }
 
 /* notebook/desktop */ 
 @media screen and (min-width: 992px) and (max-width: 1199px)
 {
+    #navbar-c1
+    {
+        width:30%;
+    }
 
     #navbar-c2
     {
+        width:70%;
         background-color: yellow;
     }
 
@@ -308,13 +677,24 @@ img
         width: 80%;
     }
 
+    #hamburgerBtn
+    {
+        display: none;
+    }
+
 }
 
 /* desktop s velkým monitorem */ 
 @media screen and (min-width: 1200px) and (max-width: 1400px)
 {
+    #navbar-c1
+    {
+        width:42%;
+    }
+
     #navbar-c2
     {
+        width:58%;
         background-color: brown;
     }
 
@@ -322,19 +702,118 @@ img
     {
         width: 75%;
     }
+
+    #hamburgerBtn
+    {
+        display: none;
+    }
     
 }
 
 /* desktop s velkým monitorem */ 
 @media (min-width: 1400px)
 {
+   #navbar-c1
+   {
+      width:42%;
+   }
+
    #navbar-c2
    {
-    background-color: blue;
+      width:58%;
+      background-color: blue;
    }
 
    #mainC
    {
      width: 67.5%;
    }
+
+   #hamburgerBtn
+   {
+     display: none;
+   }
+
+}
+
+#hamburgerBtn
+{
+    width: 30px;
+    height: 30px;
+}
+
+#hamburgerImg
+{
+    width: 100%;
+    height:auto;
+    color:red;
+}
+
+
+#projects
+{
+    height: auto;
+    width: 100%;
+}
+
+
+#projectTitle
+{
+    /* font-family: 'Chewy'; */
+    font-family: 'Bree Serif';
+    font-weight: 700;
+    font-size:  24px;
+
+    color: black;
+}
+
+#projectsReps
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+#card1
+{
+    width: 380px;
+    height: 222px;
+
+    background-color: rgba(252,255,237,1);
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    border-bottom: 2px solid rgba(101,114,17,1);
+}
+
+
+#card1Title
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+#python3
+{
+    width: 20px;
+    height: auto;
+    color: white;
+    /* border: 2px solid green; */
+    border-radius: 50%;
+    background-color: green;
+
+    padding: 5px;
+}
+
+#card1Name
+{
+    font-weight:600;
+    font-size: 12px;
+    font-family: 'Bree Serif';
+
+    margin-left: 10px;
 }
