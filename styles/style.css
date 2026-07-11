@@ -58,6 +58,32 @@
   font-weight: 400;
 }
 
+@font-face
+{
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/Plus_Jakarta_Sans/PlusJakartaSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/Plus_Jakarta_Sans/PlusJakartaSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
 body
 {
     margin: 0px;
@@ -812,44 +838,49 @@ img
 {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
 
-    background-color: blue;
+    /* background-color: blue; */
 
     width: 100%;
     height: 15%;
 
     margin: 0px;
 
-    padding-left: 33px;
+    /* padding-left: 33px; */
 
     box-sizing: border-box;
 
     margin-top: 10px;
+
+    padding-left:   30px;
+    padding-right:  20px;
 }
 
-#python3
+/* #python3
 {
     width: 16px;
     height: auto;
     color: white;
-    /* border: 2px solid green; */
+    /* border: 2px solid green;
     border-radius: 50%;
     background-color: green;
 
     padding: 2px;
 
     box-sizing: border-box;
-}
+} */
 
 #card1Name
 {
     font-weight: 600;
-    font-size: 12px;
+    font-size: 18px;
     font-family: 'Bree Serif';
 
-    margin-left: 10px;
+    /* margin-left: 10px; */
+
+    color:#005A9C;
 }
 
 #pokus
@@ -1374,7 +1405,8 @@ img
 {
     width: 100%;
     height: 80%;
-    /* background-color: pink; */
+
+    /* background-color: pink;  */
 
     display: flex;
     flex-direction: row;
@@ -1387,7 +1419,8 @@ img
 {
     width: 40%;
     height: 100%;
-    /* background-color: red;  */
+
+    /* background-color: red;   */
 
     display: flex;
     flex-direction: column;
@@ -1404,7 +1437,8 @@ img
 {
     width: 60%;
     height: 100%;
-    /* background-color: green;  */
+
+    /* background-color: green;   */
 
     display: flex;
     flex-direction: column;
@@ -1441,6 +1475,8 @@ img
     margin: 0px;
     width: 100%;
     margin-bottom: 2px;
+
+    color:#005A9C;
 }
 
 #programmingImg
@@ -1448,7 +1484,7 @@ img
     width:  14px;
     height: auto;
 
-    color: black;
+    color:#005A9C;
     /* margin-left: 9px; */
 
 }
@@ -1479,6 +1515,8 @@ img
 
     margin-top:     20px;
     margin-bottom:  10px;
+
+    color: black;
 }
 
 #moreInformation-right-C-p2
@@ -1495,7 +1533,7 @@ img
     width: 14px;
     height: auto;
 
-    color: black;;
+    color:#005A9C;
 
     /* margin-left: 9px; */
 }
@@ -1533,7 +1571,7 @@ img
     width:  14px;
     height: auto;
 
-    color: black;
+    color:#005A9C;
     /* margin-left: 9px; */
 }
 
@@ -1570,7 +1608,7 @@ img
     width:  14px;
     height: auto;
 
-    color: red;
+    color:#005A9C;
     /* margin-left: 9px; */
 }
 
@@ -1624,13 +1662,13 @@ img
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    justify-content: start;
+    align-items: start;
+    /* position: relative; */
 
     background-color: white;
 
-    padding: 1px;
+    /* padding: 1px; */
 
 }
 
@@ -1655,6 +1693,9 @@ img
     padding-left: 10px;
 
     font-size: 12px;
+
+    color: white;
+
 }
 
 
@@ -1675,14 +1716,14 @@ img
 
     height: 100%;
 
-    background-color: red;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     margin-left: 5px;
+
+    font-family: 'Lexend';
 
 }
 
@@ -1691,16 +1732,24 @@ img
     margin-top: 10px;
     width: auto;
 
-    background-color: #FFD700;
+    /* background-color: #FFD700;  */
 
     font-size:   18px;
     font-weight: bold;
-    font-family:    'Lexend';
+    font-family: 'Chewy';
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+
+    color: #00FA9A;
+
+    width: 100%;
+
+    padding-left: 35px;
+
+    box-sizing: border-box;
 
 
 }
@@ -1709,6 +1758,640 @@ img
 {
     width: 25px;
     height: auto;
+
+    margin-left: 5px;
+
+    color: #00FA9A;
+}
+
+
+/* Vytvor dne 26.6.2026 */
+
+#projects2
+{
+    height: auto;
+    width: 100%;
+
+    margin-bottom: 50px;
+
+    background-color: lightblue;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    padding: 20px;
+
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+#card2
+{
+
+    width: 309px;
+    height: 369px;
+
+    background-color: white;
+
+    /* background-color: rgba(241,245,249,1); */
+
+    border: 1px solid rgba(233,234,242,1);
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px;
+
+    box-sizing: border-box;
+
+    z-index: 1;
+
+}
+
+#card2-row1
+{
+    /* height: 189px; */
+
+    height: 167px;
+
+    width: 100%;
+    /* background-color: #005A9C; */
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#card2-row2
+{
+    height: 90px;
+    width: 100%;
+    /* background-color: red; */
+    flex-shrink: 0;
+}
+
+#card2-row3
+{
+    height: 90px;
+    width: 100%;
+    /* background-color: green; */
+    flex: 1;          /* Zabere všechen zbývající prostor */
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: start;
+}
+
+#card2-imgC
+{
+    width: 277px;
+    height: 156px;
+
+    /* background-color: grey; */
+
+    /* border: 1px solid gray; */
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+#card2-projectTitle
+{
+    /* background-color: chartreuse; */
+
+    font-size: 18px;
+    font-family:'Plus Jakarta Sans';
+    font-weight: 700;
+
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 12px;
+
+    color: #004687;
+
+}
+
+#card2-author
+{
+    font-size: 12px;
+    font-family:'Plus Jakarta Sans';
+    font-weight: 400;
+
+    margin: 0px;
+
+    color: rgba(89,92,115,1);
+}
+
+#card2-languanges
+{
+
+    width:75px;
+    height: 22px;
+
+    border-radius: 5px;
+
+    background-color: rgba(194,233,235,1);
+    color: rgba(42,82,97,1);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+    font-family:'Plus Jakarta Sans';
+    font-weight: 700;
+
+    margin-top: 15px;
+
+
+}
+
+#card2-likes
+{
+    width: 47px;
+    height: 20px;
+
+    margin-top: 15px;
+
+    border: 1px solid rgba(209,210,224,1);
+    border-radius: 5px;
+
+    margin-left: 5px;
+
+    background-color: #E5E4E2;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#thumb-up
+{
+    width: 15px;
+    color: #004687;
+}
+
+#likescount
+{
+    width: auto;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+    font-family:'Plus Jakarta Sans';
+    font-weight: 600;
+
+    margin-left: 5px;
+
+    color: #004687;
+}
+
+#card2-img
+{
+    border-radius: 20px;
+}
+
+#coverLayer
+{
+    width: 277px;
+    height: 156px;
+
+    background-color: #E5E4E2;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    border-radius: 20px;
+
+    opacity: 0.2;
+
+
+}
+
+#card2-details
+{
+
+    width: 342px;
+    height: 552px;
+
+    background-color: white !important;
+
+    border: 1px solid rgba(209,210,224,1);
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 24px;
+
+    box-sizing: border-box;
+
+    position: absolute;
+
+    /* top: -20px; */
+
+    top: -115px;
+
+    left: 300px;
+
+    display: none;
+
+    z-index: 5;
+
+}
+
+/* Další pokus 28.6.26 */
+
+#card2-details::before
+{
+    content: "";
+    position: absolute;
+
+    left: -16px;
+    top: 275px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 16px solid #d0d7e2;
+}
+
+#card2-details::after
+{
+    content: "";
+    position: absolute;
+
+    left: -15px;
+    top: 276px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 15px solid white;
+}
+
+#card2:hover
+{
+    background-color: rgba(246,247,249,1);
+}
+
+
+#card2:hover #card2-details
+{
+    display: flex;
+}
+
+#card2-introductory
+{
+
+    width: 100%;
+    height: auto;
+
+    /* background-color: green; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+#card2-content
+{
+
+    width: 100%;
+    height: 50%;
+
+    /* background-color: yellowgreen; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+}
+
+#card2-links
+{
+
+    width: 100%;
+    height: 20%;
+
+    /* background-color: pink; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    box-sizing: border-box;
+
+}
+
+
+#card2-introductory-title
+{
+    font-size:   18px;
+    font-family:'Plus Jakarta Sans';
+    font-weight: 700;
+
+    /* background-color: #00FA9A;  */
+
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 15px;
+}
+
+#card2-introductory-lang-date
+{
+    width: 100%;
+    height: auto;
+
+    /* background-color: darkgrey; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    margin-bottom: 11px;
+}
+
+#card2-introductory-lang
+{
+    background-color: rgba(194,233,235,1);
+    color: rgba(13,82,97,1);
+
+
+    font-size:   12px;
+    font-family:'Plus Jakarta Sans';
+    font-weight: 700;
+
+    width: 76px;;
+    height: 23px;
+
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#card2-introductory-date
+{
+    width: auto;
+    height: auto;
+
+    font-size:   12px;
+    font-family:'Plus Jakarta Sans';
+    font-weight: 700;
+
+    color: rgba(71,126,99,1);
+
+    margin-left: 9px;
+}
+
+
+#card2-introductory-origin
+{
+    /* background-color: blueviolet;  */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 18px;
+
+}
+
+#card2-introductory-origin-platform
+{
+    font-size:   12px;
+    font-family:'Plus Jakarta Sans';
+    font-weight: 700;
+
+    color: #FEBE10;
+
+    width: 50px;
+    height: 23px;
+
+    background-color: #F0E68C;
+
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#card2-content-desc
+{
+    width: 100%;
+    height: auto;
+
+    /* background-color: darkorange; */ 
+
+    color: rgba(105,106,120,1);
+
+    font-size:   14px;
+    font-family:'Plus Jakarta Sans';
+    font-weight: 400;
+
+    display: block;
+
+    text-align: justify;
+
+    margin: 0;
+
+    margin-bottom: 10px;
+
+    line-height: 1.5;
+
+}
+
+#functionImg
+{
+    width: 18px;
+    /* color: rgba(105,106,120,1); */
+
+    color:#005A9C;
+
+    /* background-color: green; */
+
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#card2-content-func1, #card2-content-func2, #card2-content-func3, #card2-content-func4, #card2-content-func5
+{
+    width: 100%;
+    height: 20px;
+
+    /* background-color: cornflowerblue; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    color: rgba(105,106,120,1);
+
+    font-size:   14px;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 400;
+
+    margin-bottom: 10px;
+
+}
+
+#card2-content-func1-desc, #card2-content-func2-desc, #card2-content-func3-desc, #card2-content-func4-desc, #card2-content-func5-desc
+{
+    
+    /* background-color: red;  */
+
+    width: 100%;
+    height: auto;
+
+    text-align:  justify;
+
+    /* margin: 0; */
+    /* margin-bottom: 5px;
+    margin-left: 5px; */
+
+    color: rgba(105,106,120,1);
+}
+
+#card2-links-imgC
+{
+    width:  50px;
+    height: 50px;
+
+    /* background-color: blue; */
+
+}
+
+#card2-links-imgC-img1
+{
+    width: 25px;
+    /* background-color: red;  */
+    color: white;
+}
+
+#card2-links-imgC2
+{
+    width:  50px;
+    height: 50px;
+    
+    /* background-color: blue; */
+
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#card2-links-imgC2-img1
+{
+    width: 20px;
+    color: white;
+}
+
+
+#card2-links-btn1
+{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+
+    border: none;
+    outline: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #004687;
+
+    cursor: pointer;
+}
+
+#card2-links-btn2
+{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+
+    border: none;
+    outline: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #004687;
+
+    cursor: pointer;
+}
+
+#card2-links-btn1-p
+{
+    font-size:   14px;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 400;
+    color: white;
+    margin: 0;
+
+    margin-left: 5px;
+}
+
+#card2-links-btn2-p
+{
+    font-size:   14px;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 400;
+    color: white;
+    margin: 0;
 
     margin-left: 5px;
 }
