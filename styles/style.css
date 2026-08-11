@@ -1709,6 +1709,8 @@ img
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 .card-thumb-up
@@ -1734,6 +1736,7 @@ img
     margin-left: 5px;
 
     color: #004687;
+
 }
 
 
@@ -2185,7 +2188,7 @@ img
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 #cards-track
