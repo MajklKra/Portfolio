@@ -2,20 +2,20 @@
 console.log("Hello World Loser !");
 
 
-function showCards(index)
-{
-    const track = document.querySelector("#cards-track");
-    const dots = document.querySelectorAll(".card-dot");
+// function showCards(index)
+// {
+//     const track = document.querySelector("#cards-track");
+//     const dots = document.querySelectorAll(".card-dot");
 
-    const cardWidth = 329; // 309px karta + 20px gap
+//     const cardWidth = 329; // 309px karta + 20px gap
 
-    track.style.transform = `translateX(-${index * cardWidth}px)`;
+//     track.style.transform = `translateX(-${index * cardWidth}px)`;
 
-    dots.forEach((dot, i) =>
-    {
-        dot.classList.toggle("active", i === index);
-    });
-}
+//     dots.forEach((dot, i) =>
+//     {
+//         dot.classList.toggle("active", i === index);
+//     });
+// }
 
 
 /* Supabase Configuration */ 
@@ -88,3 +88,41 @@ document.querySelectorAll(".card-likes").forEach(likeButton => {
     });
 
 });
+
+function showCards(index)
+{
+    const track = document.querySelector("#cards-track");
+    const dots = document.querySelectorAll(".card-dot");
+    const cards = document.querySelectorAll("#cards-track .card");
+
+    const cardWidth = 329;
+
+    track.style.transform = `translateX(-${index * cardWidth}px)`;
+
+    dots.forEach((dot, i) =>
+    {
+        dot.classList.toggle("active", i === index);
+    });
+
+    // všem kartám nejdříve nastavíme výchozí směr doprava
+    cards.forEach(card =>
+    {
+        card.classList.remove("details-left");
+    });
+
+    // 3. a 4. viditelná karta se otevřou doleva
+    const thirdVisibleCard = index + 2;
+    const fourthVisibleCard = index + 3;
+
+    if (cards[thirdVisibleCard])
+    {
+        cards[thirdVisibleCard].classList.add("details-left");
+    }
+
+    if (cards[fourthVisibleCard])
+    {
+        cards[fourthVisibleCard].classList.add("details-left");
+    }
+}
+
+showCards(0);
