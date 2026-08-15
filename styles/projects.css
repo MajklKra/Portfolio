@@ -1,0 +1,80 @@
+@font-face 
+{
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter_18pt-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter_18pt-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter_18pt-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter_18pt-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+body
+{
+    padding-left: 360px;
+    padding-right: 360px;
+}
+
+#headingC-name
+{
+    background-color: pink;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+
+    display: flex;
+    align-items: center;
+}
+
+#headingC-subtitle
+{
+    font-family: "Inter";
+    font-size: 48px;
+    font-weight: 700;
+
+    background-color: red;
+
+    margin: 0px;
+}
+
+#headingC-name-span-img
+{
+    width: 16px;
+    height: 16px;
+    background-color: blue;
+
+    display: inline-block;
+}
+
+#headingC-name-span
+{
+    background-color: green;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 10px;
+} 

@@ -2209,14 +2209,14 @@ img
 
     /* margin-top: 15px; */
 
-    background-color: green;
+    background-color: #003153;
 
     padding:20px;
 
     border-radius: 10px;
 }
 
-.card-dot
+/* .card-dot
 {
     width: 15px;
     height: 15px;
@@ -2225,11 +2225,28 @@ img
     background-color: gray;
 
     cursor: pointer;
+} */
+
+
+.card-dot
+{
+    width: 30px;
+    height: 5px;
+
+    /* border-radius: 50%; */
+    
+    border-radius: 5px;
+    
+    background-color: gray;
+
+    cursor: pointer;
 }
 
 .card-dot.active
 {
-    background-color: black;
+    /* background-color: black; */
+
+    background-color: white;
 }
 
 #card-dots-wrapper
@@ -2274,4 +2291,18 @@ img
 
     border-right: none;
     border-left: 15px solid white;
+}
+
+#listOfProjects
+{
+    font-family: 'Bree Serif';
+    font-weight: 700;
+    font-size:  24px;
+
+    color: black;
+
+    text-decoration: none;
+
+    margin-bottom: 50px;
+
 }
