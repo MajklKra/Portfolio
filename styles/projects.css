@@ -36,6 +36,11 @@ body
     padding-right: 360px;
 }
 
+#headingC
+{
+    margin-bottom:77px;
+}
+
 #headingC-name
 {
     background-color: pink;
@@ -78,3 +83,181 @@ body
 
     margin-right: 10px;
 } 
+
+table 
+{
+    
+    width: 1170px;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+}
+
+
+
+table tr
+{
+    height: 75px;
+    text-align: left;
+}
+
+th:nth-child(1) 
+{
+    /* width: 10%; */
+
+    width: 66px;
+    height: 75px;
+
+    background-color: yellow;
+    text-align: left;
+
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+th:nth-child(2) 
+{
+    /* width: 25%; */
+
+    width: 301px;
+
+    background-color: orange;
+    text-align: left;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+th:nth-child(3) 
+{
+    /* width: 20%; */
+
+    width: 144px;
+
+    background-color: purple;
+    text-align: left;
+
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+th:nth-child(4) 
+{
+    /* width: 30%; */
+
+    width: 429px;
+
+    background-color: cyan;
+    text-align: left;
+
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+th:nth-child(5) 
+{
+    width: 230px;
+    background-color: magenta;
+    text-align: left;
+    
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+td 
+{
+    border-bottom: 1px solid #ccc;
+}
+
+/* 1. sloupec */
+td:nth-child(1) 
+{
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+/* 2. sloupec */
+td:nth-child(2) 
+{
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+/* 3. sloupec */
+td:nth-child(3) 
+{
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* 4. sloupec */
+td:nth-child(4) 
+{
+
+    background-color: yellow;
+
+}
+
+.programLang
+{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 12px;
+
+    color: #5EEAD4;              /* barva písma */
+    background-color: #2DD4BF1A; /* barva kontejneru */
+
+    width: fit-content;
+
+    border-radius:25px; /* kulaté rohy */
+
+    margin-right: 5px;
+}
+
+.technologies 
+{
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.td-a-img
+{
+    width: 16px;
+    height: 16px;
+
+    background-color: red;
+
+    margin-left: 5px;
+}
+
+.td-a 
+{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
