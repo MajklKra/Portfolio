@@ -34,6 +34,9 @@ body
 {
     padding-left: 360px;
     padding-right: 360px;
+
+    background-color: rgba(15,23,42,255);
+
 }
 
 #headingC
@@ -43,7 +46,7 @@ body
 
 #headingC-name
 {
-    background-color: pink;
+    /* background-color: pink; */
     font-family: "Inter";
     font-size: 16px;
     font-weight: 600;
@@ -51,6 +54,7 @@ body
 
     display: flex;
     align-items: center;
+    color: rgba(88,219,212,255);
 }
 
 #headingC-subtitle
@@ -59,23 +63,26 @@ body
     font-size: 48px;
     font-weight: 700;
 
-    background-color: red;
+    /* background-color: red; */
 
     margin: 0px;
+
+    color:white;
 }
 
 #headingC-name-span-img
 {
     width: 16px;
     height: 16px;
-    background-color: blue;
+    /* background-color: blue; */
 
     display: inline-block;
+    color: rgba(88,219,212,255);
 }
 
 #headingC-name-span
 {
-    background-color: green;
+    /* background-color: green; */
 
     display: flex;
     align-items: center;
@@ -94,11 +101,11 @@ table
 }
 
 
-
 table tr
 {
     height: 75px;
     text-align: left;
+    color: #888888;
 }
 
 th:nth-child(1) 
@@ -108,12 +115,13 @@ th:nth-child(1)
     width: 66px;
     height: 75px;
 
-    background-color: yellow;
+    /* background-color: yellow; */
     text-align: left;
 
     font-family: Inter, sans-serif;
     font-size: 14px;
     font-weight: 600;
+    color: white;
 }
 
 th:nth-child(2) 
@@ -122,11 +130,13 @@ th:nth-child(2)
 
     width: 301px;
 
-    background-color: orange;
+    /* background-color: orange; */
     text-align: left;
     font-family: Inter, sans-serif;
     font-size: 14px;
     font-weight: 600;
+
+    color: white;
 }
 
 th:nth-child(3) 
@@ -135,12 +145,14 @@ th:nth-child(3)
 
     width: 144px;
 
-    background-color: purple;
+    /* background-color: purple; */
     text-align: left;
 
     font-family: Inter, sans-serif;
     font-size: 14px;
     font-weight: 600;
+
+    color: white;
 }
 
 th:nth-child(4) 
@@ -149,29 +161,33 @@ th:nth-child(4)
 
     width: 429px;
 
-    background-color: cyan;
+    /* background-color: cyan; */
     text-align: left;
 
     font-family: Inter, sans-serif;
     font-size: 14px;
     font-weight: 600;
+
+    color: white;
 }
 
 th:nth-child(5) 
 {
     width: 230px;
-    background-color: magenta;
+    /* background-color: magenta; */
     text-align: left;
     
     font-family: Inter, sans-serif;
     font-size: 14px;
     font-weight: 600;
 
+    color: white;
+
 }
 
 td 
 {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(34,43,61,1);;
 }
 
 /* 1. sloupec */
@@ -182,6 +198,8 @@ td:nth-child(1)
     font-size: 14px;
     font-weight: 400;
 
+    color: rgba(129,148,183,1);
+
 }
 
 /* 2. sloupec */
@@ -191,6 +209,8 @@ td:nth-child(2)
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 600;
+
+    color:white;
     
 }
 
@@ -201,14 +221,21 @@ td:nth-child(3)
     font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 400;
+
+    color: rgba(129,148,183,1);
 }
 
 /* 4. sloupec */
 td:nth-child(4) 
 {
 
-    background-color: yellow;
+    /* background-color: yellow; */
 
+}
+
+.td-a:hover 
+{
+    color: rgba(88, 219, 212, 1);
 }
 
 .programLang
@@ -218,8 +245,8 @@ td:nth-child(4)
     font-weight: 500;
     padding: 4px 12px;
 
-    color: #5EEAD4;              /* barva písma */
-    background-color: #2DD4BF1A; /* barva kontejneru */
+    color: #5EEAD4;              
+    background-color: #2DD4BF1A;  
 
     width: fit-content;
 
@@ -230,7 +257,6 @@ td:nth-child(4)
 
 .technologies 
 {
-    text-decoration: none;
     font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -245,9 +271,11 @@ td:nth-child(4)
     width: 16px;
     height: 16px;
 
-    background-color: red;
+    /* background-color: red; */
 
     margin-left: 5px;
+
+    /* color: rgba(129,148,183,1); */
 }
 
 .td-a 
@@ -260,4 +288,16 @@ td:nth-child(4)
     font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 400;
+
+    color: rgba(129,148,183,1);
+}
+
+.td-a-img2
+{
+    width: 16px;
+    height: 16px;
+
+    /* background-color: red; */
+
+    /* color: rgba(129,148,183,1); */
 }
