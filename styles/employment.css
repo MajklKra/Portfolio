@@ -1,0 +1,154 @@
+
+html{
+    font-family: "DM Serif Text", serif;
+}
+
+
+html > body{
+    background-color:  white;
+    font-size: medium;
+}
+
+.d1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d1 #td1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d1 li{
+    line-height: 1.5;
+    list-style-type: square;
+}
+
+
+
+/* #h2,#h3,#h4
+{
+    margin-left: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 0.3rem;
+} */
+
+.container{
+    
+}
+
+.col-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-8>ul>li{
+    list-style-type: square;
+}
+
+@media screen and (max-width: 575px) 
+{
+    /* html>body{
+        color:red;
+    } */
+
+    #hilite{
+        width: 8rem;
+    }
+
+    #devro{
+        width: 8rem;
+    }
+}
+
+@media screen and (min-width: 575px) and (max-width: 767px) 
+{
+    /* html>body{
+        color:blue;
+    } */
+
+    #hilite{
+        width: 9rem;
+    }
+
+    #devro{
+        width: 9rem;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) 
+{
+    /* html>body{
+        color:green;
+    } */
+
+    #hilite{
+        width: 200px;
+    }
+
+    #devro{
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) 
+{
+
+    /* html>body{
+        color:pink;
+    } */
+
+    #hilite{
+        width: 200px;
+    }
+
+    #devro{
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 1200px)
+{
+    
+    /* html>body{
+        color:yellow;
+    } */
+
+    #hilite{
+        width: 200px;
+    }
+
+    #devro{
+        width: 200px;
+    }
+}
+
+html>body>div>div>div{
+  
+}
+
+.a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.b{
+    list-style-type: square;
+}
+
+#row1
+{
+    background-color: rgba(173, 216, 230, 0.1);
+    color:#4682B4;
+}
+
+#employment-title
+{
+    color:#5D8AA8;
+    /* text-shadow: 1px 1px 4px #4169E1;  */
+}

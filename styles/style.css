@@ -81,6 +81,37 @@
     font-style: normal;
 }
 
+@font-face 
+{
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter_18pt-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter_18pt-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter_18pt-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter_18pt-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
 
 
 body
@@ -588,7 +619,7 @@ img
     color: black;
 }
 
-#projectsReps
+/* #projectsReps
 {
     display: flex;
     flex-direction: row;
@@ -604,7 +635,7 @@ img
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
+} */
 
 #card1
 {
@@ -2305,4 +2336,238 @@ img
 
     margin-bottom: 50px;
 
+}
+
+
+#employment
+{
+    background-color: green;
+    width:100%;
+    height: auto;
+    /* text-align: start; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#employmentTitle
+{
+    /* font-family: 'Chewy'; */
+    font-family: 'Bree Serif';
+    font-weight: 700;
+    font-size:  24px;
+
+    color: black;
+
+    text-decoration: none;
+
+    margin-bottom: 20px;
+}
+
+
+#employmentCV
+{
+    /* font-family: 'Chewy'; */
+    font-family: 'Lexend';
+    font-weight: 500;
+    font-size:  16px;
+    color: #888888;
+ 
+    text-decoration: none;
+
+    background-color: chocolate;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+#contact
+{
+    background-color: lightblue;
+    width:100%;
+    height: auto;
+    text-align: start;
+}
+
+
+#contactTitle
+{
+    font-family: 'Bree Serif';
+    font-weight: 700;
+    font-size:  24px;
+
+    color: black;
+
+    background-color: yellow;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+
+#contactName
+{
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1; 
+    background: red;
+    margin: 0px;
+
+    color: #e2e8f0;
+
+    margin-bottom: 5px;
+}
+
+#contactPosition
+{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    background: blue;
+    margin: 0px;
+    color: #e2e8f0;
+
+    margin-bottom: 5px;
+
+}
+
+#contactStatement
+{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background: green;
+
+    margin: 0px;
+    color: #e2e8f0;
+
+    margin-bottom: 25px;
+   
+}
+
+
+#iconsCont
+{
+    width: 100%;
+    height: auto;
+
+    background-color: #FFD700;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+}
+
+
+#contactGib
+{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+
+    margin-right: 20px;
+}
+
+#contactLinkedIn
+{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+
+    margin-right: 20px;
+}
+
+#contactEmail
+{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+
+    margin-right: 20px;
+}
+
+#contactAddress
+{
+
+    font-family: 'Lexend';
+    font-weight: 500;
+    font-size:  16px;
+    color:rgba(0,105,255,255);
+    margin-bottom: 0px;
+
+}
+
+#contactStreet
+{
+    font-family: 'Lexend';
+    font-weight: 500;
+    font-size:  16px;
+
+    color: #888888;
+    margin: 0px;
+}
+
+#contactVillage
+{
+    font-family: 'Lexend';
+    font-weight: 500;
+    font-size:  16px;
+
+    color: #888888;
+    margin: 0px;
+}
+
+
+#contactRegion
+{
+    font-family: 'Lexend';
+    font-weight: 500;
+    font-size:  16px;
+
+    color: #888888;
+
+    margin: 0px;
+}
+
+
+#contactMap
+{
+    width: 100%;
+    height: auto;
+
+    background-color: pink;
+
+    margin-top: 25px;
+
+    border-radius: 10px;
+}
+
+#contactMap iframe 
+{
+    width:400px;
+    height: 300px; 
+    border: none;
+
+    border-radius: 10px;
+}
+
+#employmentCVIcon
+{
+    width:  25px;
+    height: 25px;
+
+    background-color: red;
+
+    margin-right:10px;
 }

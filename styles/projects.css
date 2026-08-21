@@ -35,18 +35,32 @@ body
     padding-left: 360px;
     padding-right: 360px;
 
-    background-color: rgba(15,23,42,255);
+    /* background-color: rgba(15,23,42,255); */
+
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+
+    background:
+    radial-gradient(
+        600px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.10) 0%,
+        rgba(255, 255, 255, 0.05) 30%,
+        rgba(255, 255, 255, 0.02) 55%,
+        transparent 75%
+    ),
+    rgba(15, 23, 42, 1);
 
 }
 
 #headingC
 {
+    margin-top: 100px;
     margin-bottom:77px;
 }
 
 #headingC-name
 {
-    /* background-color: pink; */
+    /* background-color: pink;  */
     font-family: "Inter";
     font-size: 16px;
     font-weight: 600;
@@ -55,6 +69,12 @@ body
     display: flex;
     align-items: center;
     color: rgba(88,219,212,255);
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    width:fit-content;
 }
 
 #headingC-subtitle
@@ -78,11 +98,13 @@ body
 
     display: inline-block;
     color: rgba(88,219,212,255);
+
+    transition: transform 0.2s ease;
 }
 
 #headingC-name-span
 {
-    /* background-color: green; */
+    /* background-color: green;  */
 
     display: flex;
     align-items: center;
@@ -90,6 +112,11 @@ body
 
     margin-right: 10px;
 } 
+
+#headingC-name:hover #headingC-name-span-img 
+{
+    transform: translateX(-4px);
+}
 
 table 
 {
@@ -273,16 +300,18 @@ td:nth-child(4)
 
     /* background-color: red; */
 
-    margin-left: 5px;
+    margin-left: 2px; 
 
     /* color: rgba(129,148,183,1); */
+
+    /* background-color: red;  */
 }
 
 .td-a 
 {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    /* gap: 5px; */
 
     text-decoration: none;
     font-family: "Inter", sans-serif;
@@ -290,6 +319,10 @@ td:nth-child(4)
     font-weight: 400;
 
     color: rgba(129,148,183,1);
+
+    /* background-color: blue;  */
+
+    transition: transform 0.2s ease;
 }
 
 .td-a-img2
@@ -300,4 +333,20 @@ td:nth-child(4)
     /* background-color: red; */
 
     /* color: rgba(129,148,183,1); */
+
+    margin-left: 5px;
+}
+
+.td-a-img path {
+    transform: translateY(3px);
+}
+
+
+.td-a:hover .td-a-img {
+    transform: translate(2px, -2px);
+}
+
+#tableC
+{
+    height: 100%;
 }
