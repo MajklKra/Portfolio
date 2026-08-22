@@ -2571,3 +2571,182 @@ img
 
     margin-right:10px;
 }
+
+#pastime
+{
+    background-color: purple;
+    width:100%;
+    height: auto;
+    text-align: start;
+    margin-top: 50px;
+}
+
+
+#pastimeTitle
+{
+    font-family: 'Bree Serif';
+    font-weight: 700;
+    font-size:  24px;
+
+    color: black;
+
+    background-color: yellow;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+
+/* Pokusy Galerie */
+
+
+.gallery 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gallery img 
+{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover 
+{
+    transform: scale(1.03);
+}
+
+
+/* LIGHTBOX */
+
+.lightbox 
+{
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.9);
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 9999;
+}
+
+.lightbox.active 
+{
+    display: flex;
+}
+
+.lightbox img 
+{
+    max-width: 85%;
+    max-height: 85vh;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+}
+
+
+/* zavírací křížek */
+
+.lightbox-close 
+{
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    background: none;
+    border: none;
+
+    font-size: 50px;
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* šipky */
+
+.lightbox-prev,
+.lightbox-next 
+{
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: rgba(0, 0, 0, 0.4);
+
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+
+    font-size: 45px;
+
+    padding: 15px 20px;
+
+    cursor: pointer;
+}
+
+.lightbox-prev 
+{
+    left: 30px;
+}
+
+.lightbox-next 
+{
+    right: 30px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover 
+{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* mobil */
+
+@media (max-width: 700px) 
+{
+
+    .gallery 
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery img 
+    {
+        height: 140px;
+    }
+
+    .lightbox-prev 
+    {
+        left: 5px;
+    }
+
+    .lightbox-next 
+    {
+        right: 5px;
+    }
+}

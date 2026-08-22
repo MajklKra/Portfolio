@@ -126,3 +126,107 @@ function showCards(index)
 }
 
 showCards(0);
+
+/* Galerie */
+
+
+const images = document.querySelectorAll(".gallery img");
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+
+const closeButton = document.getElementById("lightboxClose");
+const prevButton = document.getElementById("lightboxPrev");
+const nextButton = document.getElementById("lightboxNext");
+
+let currentIndex = 0;
+
+
+// kliknutí na obrázek
+
+images.forEach((image, index) => {
+
+    image.addEventListener("click", () => {
+
+        currentIndex = index;
+
+        lightboxImage.src = image.src;
+
+        lightbox.classList.add("active");
+
+    });
+
+});
+
+
+// další obrázek
+
+nextButton.addEventListener("click", () => {
+
+    currentIndex++;
+
+    if (currentIndex >= images.length) {
+        currentIndex = 0;
+    }
+
+    lightboxImage.src = images[currentIndex].src;
+
+});
+
+
+// předchozí obrázek
+
+prevButton.addEventListener("click", () => {
+
+    currentIndex--;
+
+    if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+    }
+
+    lightboxImage.src = images[currentIndex].src;
+
+});
+
+
+// zavření
+
+closeButton.addEventListener("click", () => {
+
+    lightbox.classList.remove("active");
+
+});
+
+
+// zavření kliknutím na tmavé pozadí
+
+lightbox.addEventListener("click", (event) => {
+
+    if (event.target === lightbox) {
+        lightbox.classList.remove("active");
+    }
+
+});
+
+
+// ovládání klávesnicí
+
+document.addEventListener("keydown", (event) => {
+
+    if (!lightbox.classList.contains("active")) {
+        return;
+    }
+
+    if (event.key === "Escape") {
+        lightbox.classList.remove("active");
+    }
+
+    if (event.key === "ArrowRight") {
+        nextButton.click();
+    }
+
+    if (event.key === "ArrowLeft") {
+        prevButton.click();
+    }
+
+});
