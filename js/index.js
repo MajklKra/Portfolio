@@ -141,8 +141,7 @@ const nextButton = document.getElementById("lightboxNext");
 
 let currentIndex = 0;
 
-
-// kliknutí na obrázek
+const description = document.getElementById("lightboxDescription");
 
 images.forEach((image, index) => {
 
@@ -150,7 +149,7 @@ images.forEach((image, index) => {
 
         currentIndex = index;
 
-        lightboxImage.src = image.src;
+        showImage(currentIndex);
 
         lightbox.classList.add("active");
 
@@ -158,8 +157,6 @@ images.forEach((image, index) => {
 
 });
 
-
-// další obrázek
 
 nextButton.addEventListener("click", () => {
 
@@ -169,12 +166,9 @@ nextButton.addEventListener("click", () => {
         currentIndex = 0;
     }
 
-    lightboxImage.src = images[currentIndex].src;
-
+    showImage(currentIndex);
 });
 
-
-// předchozí obrázek
 
 prevButton.addEventListener("click", () => {
 
@@ -184,8 +178,7 @@ prevButton.addEventListener("click", () => {
         currentIndex = images.length - 1;
     }
 
-    lightboxImage.src = images[currentIndex].src;
-
+    showImage(currentIndex);
 });
 
 
@@ -193,6 +186,7 @@ prevButton.addEventListener("click", () => {
 
 closeButton.addEventListener("click", () => {
 
+    setZoom(1);
     lightbox.classList.remove("active");
 
 });
@@ -200,13 +194,16 @@ closeButton.addEventListener("click", () => {
 
 // zavření kliknutím na tmavé pozadí
 
-lightbox.addEventListener("click", (event) => {
+// lightbox.addEventListener("click", (event) => {
 
-    if (event.target === lightbox) {
-        lightbox.classList.remove("active");
-    }
+//     if (event.target === lightbox) {
 
-});
+//         setZoom(1);
+//         lightbox.classList.remove("active");
+
+//     }
+
+// });
 
 
 // ovládání klávesnicí
@@ -217,7 +214,9 @@ document.addEventListener("keydown", (event) => {
         return;
     }
 
-    if (event.key === "Escape") {
+    if (event.key === "Escape") 
+    {
+        setZoom(1);
         lightbox.classList.remove("active");
     }
 
@@ -229,4 +228,135 @@ document.addEventListener("keydown", (event) => {
         prevButton.click();
     }
 
+});
+
+function showImage(index) 
+{
+    lightboxImage.src = images[index].src;
+    description.textContent = images[index].dataset.description;
+
+    setZoom(1);
+}
+
+/* Zoom instrukce*/
+
+
+const zoomInButton = document.getElementById("zoomIn");
+const zoomOutButton = document.getElementById("zoomOut");
+const zoomResetButton = document.getElementById("zoomReset");
+
+let zoom = 1;
+
+let posX = 0;
+let posY = 0;
+
+function updateImageTransform()
+{
+    lightboxImage.style.transform =
+        `translate(${posX}px, ${posY}px) scale(${zoom})`;
+}
+
+function setZoom(value)
+{
+    zoom = Math.min(Math.max(value, 0.5), 4);
+
+    if (zoom <= 1)
+    {
+        posX = 0;
+        posY = 0;
+
+        lightboxImage.style.cursor = "default";
+    }
+    else
+    {
+        lightboxImage.style.cursor = "grab";
+    }
+
+    updateImageTransform();
+
+    zoomResetButton.textContent = `${Math.round(zoom * 100)} %`;
+}
+
+zoomInButton.addEventListener("click", () => {
+    setZoom(zoom + 0.25);
+});
+
+zoomOutButton.addEventListener("click", () => {
+    setZoom(zoom - 0.25);
+});
+
+zoomResetButton.addEventListener("click", () => {
+    setZoom(1);
+});
+
+lightboxImage.addEventListener("wheel", (event) => {
+
+    event.preventDefault();
+
+    if (event.deltaY < 0) {
+        setZoom(zoom + 0.1);
+    } else {
+        setZoom(zoom - 0.1);
+    }
+
+});
+
+let isDragging = false;
+
+let startX = 0;
+let startY = 0;
+
+let startPosX = 0;
+let startPosY = 0;
+
+
+lightboxImage.addEventListener("mousedown", (event) =>
+{
+    if (zoom <= 1)
+    {
+        return;
+    }
+
+    isDragging = true;
+
+    startX = event.clientX;
+    startY = event.clientY;
+
+    startPosX = posX;
+    startPosY = posY;
+
+    lightboxImage.style.cursor = "grabbing";
+
+    event.preventDefault();
+});
+
+
+document.addEventListener("mousemove", (event) =>
+{
+    if (!isDragging)
+    {
+        return;
+    }
+
+    const deltaX = event.clientX - startX;
+    const deltaY = event.clientY - startY;
+
+    posX = startPosX + deltaX;
+    posY = startPosY + deltaY;
+
+    updateImageTransform();
+});
+
+
+document.addEventListener("mouseup", () =>
+{
+    if (!isDragging)
+    {
+        return;
+    }
+
+    isDragging = false;
+
+    lightboxImage.style.cursor =
+        zoom > 1 ? "grab" : "default";
 });

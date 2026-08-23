@@ -1551,13 +1551,13 @@
             <h1 id="pastimeTitle">Volnočasové aktivity</h1>
 
             <div class="gallery">
-                <img src="images/car-1.png" alt="Foto 1">
-                <img src="images/car-2.JPG" alt="Foto 2">
-                <img src="images/car-3.jpg" alt="Foto 3">
-                <img src="images/car-4.png" alt="Foto 4">
-                <img src="images/car-5.jpg" alt="Foto 5">
-                <img src="images/car-6.png" alt="Foto 6">
-                <img src="images/car-7.png" alt="Foto 7">
+                <img src="images/car-1.png" alt="Foto 1" data-description="San Francisco 2018">
+                <img src="images/car-2.JPG" alt="Foto 2" data-description="Austrálie 2011">
+                <img src="images/car-3.jpg" alt="Foto 3" data-description="Oblíbená kniha">
+                <img src="images/car-4.png" alt="Foto 4" data-description="Pravidelný běh">
+                <img src="images/car-5.jpg" alt="Foto 5" data-description="Dobrovolnicé divadlo">
+                <img src="images/car-6.png" alt="Foto 6" data-description="Oblíbený film">
+                <img src="images/car-7.png" alt="Foto 7" data-description="Rodina">
             </div>
 
             <div class="lightbox" id="lightbox">
@@ -1565,8 +1565,23 @@
 
                 <button class="lightbox-prev" id="lightboxPrev">&#10094;</button>
 
-                <img id="lightboxImage" src="" alt="Zvětšená fotografie">
+                <!-- <img id="lightboxImage" src="" alt="Zvětšená fotografie"> -->
 
+                <div class="lightbox-content">
+
+                    <img id="lightboxImage" src="" alt="Zvětšená fotografie">
+
+                    <p id="lightboxDescription"></p>
+
+                    
+                </div>
+                
+                <div class="lightbox-zoom">
+                    <button id="zoomOut">−</button>
+                    <button id="zoomReset">100 %</button>
+                    <button id="zoomIn">+</button>
+                </div>
+                
                 <button class="lightbox-next" id="lightboxNext">&#10095;</button>
             </div>
 

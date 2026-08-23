@@ -2750,3 +2750,85 @@ img
         right: 5px;
     }
 }
+
+.lightbox-content 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lightboxDescription 
+{
+    margin-top: 15px;
+
+    color: white;
+    font-family: "Inter";
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* Zoom */
+
+#lightboxImage 
+{
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+
+    float: none;
+    margin: 0;
+
+    position: relative;
+    z-index: 1;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next
+{
+    z-index: 100;
+}
+
+.lightbox-zoom 
+{
+    position: absolute;
+
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    z-index: 100;
+}
+
+.lightbox-zoom button 
+{
+    min-width: 50px;
+    height: 40px;
+
+    padding: 0 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+#lightboxImage
+{
+    cursor: default;
+
+    user-select: none;
+    -webkit-user-drag: none;
+
+    transition: transform 0.1s ease;
+}
