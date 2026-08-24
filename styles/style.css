@@ -2832,3 +2832,77 @@ img
 
     transition: transform 0.1s ease;
 }
+
+
+#learningSources
+{
+    background-color: purple;
+    width:100%;
+    height: auto;
+    text-align: start;
+}
+
+
+#learningSourcesTitle
+{
+    font-family: 'Bree Serif';
+    font-weight: 700;
+    font-size:  24px;
+
+    color: black;
+
+    background-color: yellow;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+
+#learningSourcesC
+{
+    width: 100%;
+    height: auto;
+
+    background-color: yellowgreen;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#learningSources-img1
+{
+    width: 200px;
+    height: 80px;
+    background-color: red;
+    margin: 0px;
+    object-fit: contain;
+
+}
+
+#learningSources-img2
+{
+    width: 350px;
+    height: auto;
+    background-color: blue;
+    margin: 0px;
+}
+
+#learningSourcesC-ITnetwork
+{
+    background-color: green;
+    width: auto;
+    height: auto;
+}
+
+#learningSourcesC-codework
+{
+    background-color: pink;
+    width: auto;
+}
