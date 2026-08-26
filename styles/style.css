@@ -2906,3 +2906,54 @@ img
     background-color: pink;
     width: auto;
 }
+
+#bookOfVisitors
+{
+    background-color: yellowgreen;
+    width:100%;
+    height: auto;
+    text-align: start;
+    margin-top: 50px;
+}
+
+
+#bookOfVisitorsitle
+{
+    font-family: 'Bree Serif';
+    font-weight: 700;
+    font-size:  24px;
+
+    color: black;
+
+    background-color: yellow;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+
+#guestbookOpen
+{
+    width: 150px;
+    height: 40px;
+
+    border-radius: 10px;
+
+    border: none;
+    outline: none;
+
+    color: white;
+
+    background-color: rgba(106,166,255,1);
+
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size:  16px;
+
+    cursor: pointer;
+}
