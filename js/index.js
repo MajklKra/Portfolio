@@ -360,3 +360,96 @@ document.addEventListener("mouseup", () =>
     lightboxImage.style.cursor =
         zoom > 1 ? "grab" : "default";
 });
+
+/*  Formular */
+
+const guestbookOpen = document.getElementById("guestbookOpen");
+const guestbookModal = document.getElementById("guestbookModal");
+const guestbookClose = document.getElementById("guestbookClose");
+const guestbookForm = document.getElementById("guestbookForm");
+
+guestbookOpen.addEventListener("click", () => {
+    guestbookModal.classList.add("active");
+});
+
+guestbookClose.addEventListener("click", () => {
+    guestbookModal.classList.remove("active");
+});
+
+guestbookForm.addEventListener("submit", async (event) => {
+
+    event.preventDefault();
+
+    const name = document.getElementById("guestName").value.trim();
+    const email = document.getElementById("guestEmail").value.trim();
+    const message = document.getElementById("guestMessage").value.trim();
+
+    const { error } = await supabaseClient
+        .from("guestbook")
+        .insert([
+            {
+                name: name,
+                email: email,
+                message: message
+            }
+        ]);
+
+    if (error) {
+        console.error("Chyba při ukládání:", error);
+        return;
+    }
+
+    guestbookForm.reset();
+    guestbookModal.classList.remove("active");
+
+    loadGuestbook();
+
+});
+
+
+/* Výpis příspěvků */
+
+
+async function loadGuestbook() 
+{
+
+    const { data, error } = await supabaseClient .from("guestbook").select("id, name, message, created_at").order("created_at", { ascending: false });
+
+    if (error) 
+    {
+        console.error("Chyba při načítání knihy návštěv:", error);
+        return;
+    }
+
+
+    const container = document.getElementById("guestbookEntries");
+
+    container.innerHTML = "";
+
+    data.forEach(entry => {
+
+        const card = document.createElement("div");
+        card.classList.add("guestbookEntry");
+
+        const name = document.createElement("h3");
+        name.textContent = entry.name;
+
+        const message = document.createElement("p");
+        message.textContent = entry.message;
+
+        const date = document.createElement("span");
+
+        const formattedDate = new Date(entry.created_at)
+            .toLocaleDateString("cs-CZ");
+
+        date.textContent = formattedDate;
+
+        card.appendChild(name);
+        card.appendChild(date);
+        card.appendChild(message);
+
+        container.appendChild(card);
+    });
+}
+
+loadGuestbook();
