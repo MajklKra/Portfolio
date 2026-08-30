@@ -435,7 +435,7 @@ async function loadGuestbook()
         name.textContent = entry.name;
 
         const message = document.createElement("p");
-        message.textContent = entry.message;
+        message.textContent = " „ " + entry.message  + " “ ";
 
         const date = document.createElement("span");
 
