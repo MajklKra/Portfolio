@@ -184,6 +184,8 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 
 #AboutMe
@@ -3288,4 +3290,57 @@ img
     align-items: center;
 
     background-color: green;
+}
+
+#visitorStats
+{
+    position: absolute;
+    right:-200px;
+    top:150px;
+
+    width: 200px;
+    height: 50px;
+
+    background-color: yellow;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    padding-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#visitorStats-uniques
+{
+    font-family: 'Lexend';
+    font-weight: 500;
+    font-size:  14px;
+    color: #888888;
+    background-color: pink;
+
+    margin-bottom: 5px;
+}
+
+#visitorStats-total
+{
+    font-family: 'Lexend';
+    font-weight: 500;
+    font-size:  14px;
+    color: #888888;
+    background-color: lightblue;
+}
+
+#uniqueVisitors
+{
+    margin-left: 5px;
+}
+
+#totalVisits
+{
+    margin-left: 5px;
 }

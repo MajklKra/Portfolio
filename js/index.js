@@ -32,6 +32,145 @@ const supabaseClient = supabase.createClient(
     SUPABASE_KEY
 );
 
+
+/* Anonymní ID návštěvníka */ 
+
+let visitorId = localStorage.getItem("visitor_id");
+
+if (!visitorId)
+{
+    visitorId = crypto.randomUUID();
+    localStorage.setItem("visitor_id", visitorId);
+}
+
+console.log("Visitor ID:", visitorId);
+
+/* **** */
+
+
+/* Zápis do návštěvníka do databáze */ 
+
+// async function registerVisitor()
+// {
+//     const { data, error } = await supabaseClient
+//         .from("visitors")
+//         .select("visitor_id")
+//         .eq("visitor_id", visitorId)
+//         .maybeSingle();
+
+//     if (error)
+//     {
+//         console.error("Chyba při hledání návštěvníka:", error);
+//         return;
+//     }
+
+//     // Návštěvník ještě v databázi není
+//     if (!data)
+//     {
+//         const { error: insertError } = await supabaseClient
+//             .from("visitors")
+//             .insert([
+//                 {
+//                     visitor_id: visitorId
+//                 }
+//             ]);
+
+//         if (insertError)
+//         {
+//             console.error("Chyba při ukládání návštěvníka:", insertError);
+//             return;
+//         }
+
+//         console.log("Nový návštěvník uložen.");
+//     }
+//     else
+//     {
+//         console.log("Návštěvník už existuje.");
+//     }
+// }
+
+// registerVisitor();
+
+
+async function registerVisitor()
+{
+    const { error } = await supabaseClient.rpc(
+        "register_visit",
+        {
+            p_visitor_id: visitorId
+        }
+    );
+
+    if (error)
+    {
+        console.error("Chyba při registraci návštěvy:", error);
+        return;
+    }
+
+    console.log("Návštěva byla zaznamenána.");
+}
+
+// registerVisitor();
+
+
+
+/* Zobrazení návštěv */ 
+
+
+async function loadVisitorStats()
+{
+    const { data, error } = await supabaseClient.rpc(
+        "get_visitor_stats"
+    );
+
+    if (error)
+    {
+        console.error("Chyba při načítání statistik:", error);
+        return;
+    }
+
+    console.log("Statistiky návštěv:", data);
+
+    if (data && data.length > 0)
+    {
+        document.getElementById("uniqueVisitors").textContent =
+            data[0].unique_visitors;
+
+        document.getElementById("totalVisits").textContent =
+            data[0].total_visits;
+    }
+}
+
+// loadVisitorStats();
+
+
+// async function startVisitorTracking()
+// {
+//     await registerVisitor();
+//     await loadVisitorStats();
+// }
+
+// startVisitorTracking();
+
+
+async function startVisitorTracking()
+{
+    await Promise.all([
+        registerVisitor(),
+        loadVisitorStats()
+    ]);
+}
+
+startVisitorTracking();
+
+
+
+
+
+
+
+
+
 async function loadCards()
 {
     const { data, error } = await supabaseClient
@@ -67,10 +206,19 @@ document.querySelectorAll(".card-likes").forEach(likeButton => {
 
         const cardId = Number(likeButton.dataset.cardId);
 
+        // const { data, error } = await supabaseClient.rpc(
+        //     "increment_card_like",
+        //     {
+        //         card_id: cardId
+        //     }
+        // );
+
+
         const { data, error } = await supabaseClient.rpc(
-            "increment_card_like",
+            "like_card",
             {
-                card_id: cardId
+                p_card_id: cardId,
+                p_visitor_id: visitorId
             }
         );
 
@@ -361,7 +509,7 @@ document.addEventListener("mouseup", () =>
         zoom > 1 ? "grab" : "default";
 });
 
-/*  Formular */
+/*  Formulář */
 
 const guestbookOpen = document.getElementById("guestbookOpen");
 const guestbookModal = document.getElementById("guestbookModal");
