@@ -200,6 +200,37 @@ async function loadCards()
 
 loadCards();
 
+
+async function loadVisitorLikes()
+{
+    const { data, error } = await supabaseClient.rpc(
+        "get_visitor_likes",
+        {
+            p_visitor_id: visitorId
+        }
+    );
+
+    if (error)
+    {
+        console.error("Chyba při načítání lajků návštěvníka:", error);
+        return;
+    }
+
+    data.forEach(item =>
+    {
+        const likeButton = document.querySelector(
+            `.card-likes[data-card-id="${item.card_id}"]`
+        );
+
+        if (likeButton)
+        {
+            likeButton.classList.add("liked");
+        }
+    });
+}
+
+loadVisitorLikes();
+
 document.querySelectorAll(".card-likes").forEach(likeButton => {
 
     likeButton.addEventListener("click", async () => {
@@ -231,6 +262,8 @@ document.querySelectorAll(".card-likes").forEach(likeButton => {
             likeButton.querySelector(".card-likescount");
 
         likesCount.textContent = data;
+
+        likeButton.classList.toggle("liked");
 
         console.log(`Karta ${cardId}: nový počet lajků = ${data}`);
     });

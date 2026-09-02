@@ -3344,3 +3344,13 @@ img
 {
     margin-left: 5px;
 }
+
+.card-likes.liked .card-thumb-up
+{
+    color: #004687;
+}
+
+.card-likes.liked .card-thumb-up path
+{
+    fill: currentColor;
+}
