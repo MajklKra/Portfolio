@@ -2377,9 +2377,9 @@ img
     /* font-family: 'Chewy'; */
     font-family: 'Bree Serif';
     font-weight: 700;
-    font-size:  24px;
+    font-size:  16px;
 
-    color: black;
+    color: rgba(0,105,255,255);
 
     text-decoration: none;
 
@@ -2392,10 +2392,10 @@ img
 #employmentCV
 {
     /* font-family: 'Chewy'; */
-    font-family: 'Lexend';
+    font-family: 'Bree Serif';
     font-weight: 500;
     font-size:  16px;
-    color: #888888;
+    color: rgba(0,105,255,255);
  
     text-decoration: none;
 
@@ -2587,12 +2587,16 @@ img
 
 #employmentCVIcon
 {
-    width:  25px;
-    height: 25px;
+    width:  35px;
+    height: auto;
 
-    background-color: red;
+    /* background-color: red; */
 
     margin-right:10px;
+
+    transform: perspective(1000px) rotateY(30deg);
+
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
 }
 
 #pastime
@@ -3316,24 +3320,29 @@ img
 #visitorStats
 {
     position: absolute;
-    right:-200px;
-    top:150px;
+    right: 0px;
+    top:  145px;
 
-    width: 200px;
-    height: 50px;
+    width: auto;
+    height: auto;
 
-    background-color: yellow;
+    background-color: white;
 
     border-radius: 10px;
 
-    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 5px;
 
-    padding-left: 20px;
+    /* padding-left: 20px; */
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 #visitorStats-uniques
@@ -3345,6 +3354,11 @@ img
     background-color: pink;
 
     margin-bottom: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
 }
 
 #visitorStats-total
@@ -3354,16 +3368,24 @@ img
     font-size:  14px;
     color: #888888;
     background-color: lightblue;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
 }
 
 #uniqueVisitors
 {
     margin-left: 5px;
+    color: rgba(0,105,255,1);
+
 }
 
 #totalVisits
 {
     margin-left: 5px;
+    color: rgba(0,105,255,1);
 }
 
 .card-likes.liked .card-thumb-up
@@ -3663,6 +3685,29 @@ img
     transform: translateY(-4px) rotate(-45deg);
 }
 
+
+#visitorImg
+{
+    width: 20px;
+    height: 20px;
+
+    color: rgba(0,105,255,1);
+
+    margin-right: 5px;
+}
+
+#visitsNumber
+{
+    font-family: 'Lexend';
+    font-weight: 500;
+    font-size:  14px;
+
+    color: rgba(0,105,255,1);
+
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}
 
 /* BREAK POINTS */ 
 
