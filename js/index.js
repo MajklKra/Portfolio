@@ -634,3 +634,36 @@ async function loadGuestbook()
 }
 
 loadGuestbook();
+
+
+/* Hamburger Menu */
+
+
+// const hamburger = document.getElementById("hamburger");
+
+// hamburger.addEventListener("click", () => {
+//     hamburger.classList.toggle("active");
+// });
+
+
+
+// const hamburger = document.getElementById("hamburger");
+// const hamburgerMenu = document.getElementById("navbar-hamburgerMenu");
+
+// hamburger.addEventListener("click", () => {
+
+//     hamburger.classList.toggle("active");
+//     hamburgerMenu.classList.toggle("active");
+
+// });
+
+
+const hamburger = document.getElementById("hamburger");
+const hamburgerMenu = document.getElementById("navbar-hamburgerMenu");
+
+hamburger.addEventListener("click", () => {
+
+    hamburger.classList.toggle("active");
+    hamburgerMenu.classList.toggle("active");
+
+});
