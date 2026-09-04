@@ -356,6 +356,10 @@ img
 {
     height: auto;
     width: 100%;
+
+    background-color: pink;
+
+    margin-bottom: 30px;
 }
 
 
@@ -367,6 +371,12 @@ img
     font-size:  24px;
 
     color: black;
+
+    margin: 0px;
+
+    background-color: red;
+
+    margin-bottom: 30px;
 }
 
 #languanges-p
@@ -384,12 +394,14 @@ img
 
 #languangesList
 {
+    max-width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 
-    /* background-color: red; */
+    background-color: red; 
 }
 
 #languanges-p2
@@ -720,8 +732,8 @@ img
 
 #html
 {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     color: white;
     position: relative;
 }
@@ -757,8 +769,8 @@ img
 
 #python2
 {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     color: white;
     position: relative;
 }
@@ -794,8 +806,8 @@ img
 
 #css
 {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     color: white;
     position: relative;
 }
@@ -831,8 +843,8 @@ img
 
 #JS
 {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     color: white;
     position: relative;
 }
@@ -867,8 +879,8 @@ img
 
 #angular
 {
-    width: 60px;
-    height: 60px;
+    min-width: 80px;
+    min-height: 80px;
     color: white;
     position: relative;
 }
@@ -904,8 +916,8 @@ img
 
 #react
 {
-    width: 60px;
-    height: 60px;
+    min-width: 80px;
+    min-height: 80px;
     color: white;
     position: relative;
 }
@@ -940,8 +952,8 @@ img
 
 #java
 {
-    width: 60px;
-    height: 60px;
+    min-width: 80px;
+    min-height: 80px;
     color: white;
     position: relative;
 }
@@ -976,8 +988,8 @@ img
 
 #MSSql
 {
-    width: 60px;
-    height: 60px;
+    min-width: 80px;
+    min-height: 80px;
     color: white;
     position: relative;
 }
@@ -1012,8 +1024,8 @@ img
 
 #SQLlite
 {
-    width: 60px;
-    height: 60px;
+    min-width: 80px;
+    min-height: 80px;
     color: white;
     position: relative;
 }
@@ -1048,8 +1060,8 @@ img
 
 #Oracle
 {
-    width: 60px;
-    height: 60px;
+    min-width: 80px;
+    min-height: 80px;
     color: white;
     position: relative;
 }
@@ -1084,8 +1096,8 @@ img
 
 #mySQL
 {
-    width: 60px;
-    height: 60px;
+    min-width: 80px;
+    min-height: 80px;
     color: white;
     position: relative;
 }
@@ -1120,8 +1132,8 @@ img
 
 #Csharp
 {
-    width: 60px;
-    height: 60px;
+    min-width: 80px;
+    min-height: 80px;
     color: white;
     position: relative;
 }
@@ -1156,8 +1168,8 @@ img
 
 #Cplus
 {
-    width: 60px;
-    height: 60px;
+    min-width: 80px;
+    min-height: 80px;
     color: white;
     position: relative;
 }
@@ -1193,8 +1205,12 @@ img
 
 #C
 {
-    width: 60px;
-    height: 60px;
+    /* width: 60px;
+    height: 60px; */
+
+    min-width: 80px;
+    min-height: 80px;
+
     color: white;
     position: relative;
 }
@@ -1725,7 +1741,7 @@ img
 
     border-radius: 5px;
 
-    background-color: rgba(194,233,235,1);
+    background-color: rgba(194,233,235,1); 
     color: rgba(42,82,97,1);
 
     display: flex;
@@ -1738,7 +1754,6 @@ img
     font-weight: 700;
 
     margin-top: 15px;
-
 
 }
 
@@ -3929,4 +3944,43 @@ img
      display: none;
    }
 
+}
+
+
+/* experiment */
+
+@media (max-width: 575px)
+{
+    #languangesList
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px)
+{
+    #languangesList
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+    #languangesList
+    {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+        align-items: center;
+        justify-items: center;
+    }
 }
