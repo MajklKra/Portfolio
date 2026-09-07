@@ -3994,7 +3994,7 @@ img
     {
         /* top: 100%; */
         top: 210%;
-        left: -30px;
+        left: -25px;
         right: auto;
 
         margin-top: 15px;
@@ -4034,7 +4034,7 @@ img
 
      .cards-slider
     {
-        height: 1000px;
+        /* height: 925px; */
 
         display: flex;
         flex-direction: column;
@@ -4044,12 +4044,23 @@ img
 
     #myProjects
     {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
 
     #cards-track
     {
-        padding-left: 30px;
+        padding-left: 10px;
+    }
+
+     .cards-slider
+    {
+        height: 435px;
+        transition: height 0.3s ease;
+    }
+
+    .cards-slider:has(.card:hover)
+    {
+        height: 925px;
     }
 }
