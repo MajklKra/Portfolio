@@ -1,26 +1,6 @@
 
 console.log("Hello World Loser !");
 
-
-// function showCards(index)
-// {
-//     const track = document.querySelector("#cards-track");
-//     const dots = document.querySelectorAll(".card-dot");
-
-//     const cardWidth = 329; // 309px karta + 20px gap
-
-//     track.style.transform = `translateX(-${index * cardWidth}px)`;
-
-//     dots.forEach((dot, i) =>
-//     {
-//         dot.classList.toggle("active", i === index);
-//     });
-// }
-
-
-/* Supabase Configuration */ 
-
-
 /* Supabase Configuration */
 
 const SUPABASE_URL = "https://tprocedevoczqsqpouyt.supabase.co";
@@ -47,51 +27,6 @@ console.log("Visitor ID:", visitorId);
 
 /* **** */
 
-
-/* Zápis do návštěvníka do databáze */ 
-
-// async function registerVisitor()
-// {
-//     const { data, error } = await supabaseClient
-//         .from("visitors")
-//         .select("visitor_id")
-//         .eq("visitor_id", visitorId)
-//         .maybeSingle();
-
-//     if (error)
-//     {
-//         console.error("Chyba při hledání návštěvníka:", error);
-//         return;
-//     }
-
-//     // Návštěvník ještě v databázi není
-//     if (!data)
-//     {
-//         const { error: insertError } = await supabaseClient
-//             .from("visitors")
-//             .insert([
-//                 {
-//                     visitor_id: visitorId
-//                 }
-//             ]);
-
-//         if (insertError)
-//         {
-//             console.error("Chyba při ukládání návštěvníka:", insertError);
-//             return;
-//         }
-
-//         console.log("Nový návštěvník uložen.");
-//     }
-//     else
-//     {
-//         console.log("Návštěvník už existuje.");
-//     }
-// }
-
-// registerVisitor();
-
-
 async function registerVisitor()
 {
     const { error } = await supabaseClient.rpc(
@@ -113,9 +48,7 @@ async function registerVisitor()
 // registerVisitor();
 
 
-
 /* Zobrazení návštěv */ 
-
 
 async function loadVisitorStats()
 {
@@ -141,18 +74,6 @@ async function loadVisitorStats()
     }
 }
 
-// loadVisitorStats();
-
-
-// async function startVisitorTracking()
-// {
-//     await registerVisitor();
-//     await loadVisitorStats();
-// }
-
-// startVisitorTracking();
-
-
 async function startVisitorTracking()
 {
     await Promise.all([
@@ -162,14 +83,6 @@ async function startVisitorTracking()
 }
 
 startVisitorTracking();
-
-
-
-
-
-
-
-
 
 async function loadCards()
 {
@@ -237,14 +150,6 @@ document.querySelectorAll(".card-likes").forEach(likeButton => {
 
         const cardId = Number(likeButton.dataset.cardId);
 
-        // const { data, error } = await supabaseClient.rpc(
-        //     "increment_card_like",
-        //     {
-        //         card_id: cardId
-        //     }
-        // );
-
-
         const { data, error } = await supabaseClient.rpc(
             "like_card",
             {
@@ -309,7 +214,6 @@ function showCards(index)
 showCards(0);
 
 /* Galerie */
-
 
 const images = document.querySelectorAll(".gallery img");
 
