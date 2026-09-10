@@ -32,8 +32,8 @@
 
 body
 {
-    padding-left: 360px;
-    padding-right: 360px;
+    /* padding-left: 360px;
+    padding-right: 360px; */
 
     /* background-color: rgba(15,23,42,255); */
 
@@ -126,7 +126,6 @@ table
     border-collapse: collapse;
 
 }
-
 
 table tr
 {
@@ -349,4 +348,427 @@ td:nth-child(4)
 #tableC
 {
     height: 100%;
+}
+
+
+/* Breakpoints */
+
+@media (max-width: 575px)
+{
+   #t1
+   {
+      background-color: orange;
+   }
+}
+
+
+
+@media screen and (min-width: 576px) and (max-width: 767px)
+{
+
+   
+    #t1
+    {
+        background-color: violet;
+    }
+
+    #tableC
+    {
+        background-color: pink;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    #headingC
+    {
+        background-color: orange;
+
+        flex-direction: column;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #headingC-name
+    {
+        background-color: green;
+        min-width: 100%;
+    }
+
+    #headingC-subtitle
+    {
+        background-color: violet;
+        min-width: 100%;
+    }
+
+    td:nth-child(3) 
+    {
+        display: none;
+    }
+
+
+    th:nth-child(3) 
+    {
+        display: none;
+    }
+
+    td:nth-child(4) 
+    {
+        display: none;
+    }
+
+
+    th:nth-child(4) 
+    {
+        display: none;
+    }
+
+    td:nth-child(1) 
+    {
+        width: 64px;
+        background-color: red;
+    }
+
+
+    th:nth-child(1) 
+    {
+        width: 64px;
+        background-color: red;
+    }
+
+    td:nth-child(2) 
+    {
+        width: 339px;
+        background-color: orange;
+    }
+
+
+    th:nth-child(2) 
+    {
+        width: 339px;
+        background-color: orange;
+    }
+
+     td:nth-child(5) 
+    {
+        width: 252px;
+        background-color: violet;
+    }
+
+
+    th:nth-child(5) 
+    {
+        width: 252px;
+        background-color: violet;
+    }
+
+    body
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+
+    #t1
+    {
+        background-color: green;
+    }
+
+    #tableC
+    {
+        background-color: pink;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    #headingC
+    {
+        background-color: orange;
+
+        flex-direction: column;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #headingC-name
+    {
+        background-color: green;
+        min-width: 100%;
+    }
+
+    #headingC-subtitle
+    {
+        background-color: violet;
+        min-width: 100%;
+    }
+
+    td:nth-child(3) 
+    {
+        display: none;
+    }
+
+
+    th:nth-child(3) 
+    {
+        display: none;
+    }
+
+    td:nth-child(4) 
+    {
+        display: none;
+    }
+
+
+    th:nth-child(4) 
+    {
+        display: none;
+    }
+
+    td:nth-child(1) 
+    {
+        width: 64px;
+        background-color: red;
+    }
+
+
+    th:nth-child(1) 
+    {
+        width: 64px;
+        background-color: red;
+    }
+
+    td:nth-child(2) 
+    {
+        width: 339px;
+        background-color: orange;
+    }
+
+
+    th:nth-child(2) 
+    {
+        width: 339px;
+        background-color: orange;
+    }
+
+     td:nth-child(5) 
+    {
+        width: 252px;
+        background-color: violet;
+    }
+
+
+    th:nth-child(5) 
+    {
+        width: 252px;
+        background-color: violet;
+    }
+
+    body
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+   
+}
+
+/* notebook/desktop */
+@media screen and (min-width: 992px) and (max-width: 1199px)
+{
+    
+    #t1
+    {
+        background-color: yellow;
+    }
+
+    #tableC
+    {
+        background-color: pink;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    #headingC
+    {
+        background-color: orange;
+
+        flex-direction: column;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #headingC-name
+    {
+        background-color: green;
+        min-width: 100%;
+    }
+
+    #headingC-subtitle
+    {
+        background-color: violet;
+        min-width: 100%;
+    }
+
+    td:nth-child(3) 
+    {
+        display: none;
+    }
+
+
+    th:nth-child(3) 
+    {
+        display: none;
+    }
+
+    td:nth-child(4) 
+    {
+        display: none;
+    }
+
+
+    th:nth-child(4) 
+    {
+        display: none;
+    }
+
+    td:nth-child(1) 
+    {
+        width: 76px;
+        background-color: red;
+    }
+
+
+    th:nth-child(1) 
+    {
+        width: 76px;
+        background-color: red;
+    }
+
+    td:nth-child(2) 
+    {
+        width: 491px;
+        background-color: orange;
+    }
+
+
+    th:nth-child(2) 
+    {
+        width: 491px;
+        background-color: orange;
+    }
+
+     td:nth-child(5) 
+    {
+        width: 313px;
+        background-color: violet;
+    }
+
+
+    th:nth-child(5) 
+    {
+        width: 313px;
+        background-color: violet;
+    }
+
+    body
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+}
+
+/* desktop s velkým monitorem */
+@media screen and (min-width: 1200px) and (max-width: 1399px)
+{
+    
+    #t1
+    {
+        background-color: blue;
+    }
+
+    #tableC
+    {
+        background-color: yellow;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    #headingC
+    {
+        background-color: orange;
+
+        flex-direction: column;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #headingC-name
+    {
+        background-color: green;
+        width: 1180px;
+    }
+
+    #headingC-subtitle
+    {
+        background-color: violet;
+        width: 1180px;
+    }
+    
+}
+
+/* desktop s velkým monitorem */
+@media (min-width: 1400px)
+{
+    #t1
+    {
+        background-color: red;
+    }
+
+    #tableC
+    {
+        background-color: blue;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    #headingC
+    {
+        background-color: orange;
+
+        flex-direction: column;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #headingC-name
+    {
+        background-color: green;
+        width: 1180px;
+    }
+
+    #headingC-subtitle
+    {
+        background-color: violet;
+        width: 1180px;
+    }
 }
