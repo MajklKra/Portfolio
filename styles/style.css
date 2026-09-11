@@ -2449,7 +2449,7 @@ img
     align-items: start;
 
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 
@@ -2464,7 +2464,7 @@ img
 
     color: #e2e8f0;
 
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 #contactPosition
@@ -2476,7 +2476,7 @@ img
     margin: 0px;
     color: #e2e8f0;
 
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 
 }
 
@@ -2507,45 +2507,86 @@ img
     justify-content: start;
     align-items: center;
 
+    margin-bottom: 25px; 
+
 }
 
 
 #contactGib
 {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background-color: red;
+    color: #888888;
 
     margin-right: 20px;
+}
+
+#contactGib:hover
+{
+    color:rgba(0,105,255,1);
+    cursor: pointer;
 }
 
 #contactLinkedIn
 {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background-color: red;
+    color: #888888;
 
     margin-right: 20px;
+}
+
+#contactLinkedIn:hover
+{
+    color:rgba(0,105,255,1);
+    cursor: pointer;
 }
 
 #contactEmail
 {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background-color: red;
+    color: #888888;
 
     margin-right: 20px;
 }
+
+#contactEmail:hover
+{
+    color:rgba(0,105,255,1);
+    cursor: pointer;
+}
+
+#contactPhone
+{
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    color: #888888;
+
+    margin-right: 20px;
+}
+
+#contactPhone:hover
+{
+    color:rgba(0,105,255,1);
+    cursor: pointer;
+}
+
+
 
 #contactAddress
 {
 
     font-family: 'Lexend';
-    font-weight: 500;
+    font-weight: 600;
     font-size:  16px;
-    color:rgba(0,105,255,255);
-    margin-bottom: 0px;
-
+    color:rgba(0,105,255,1);
+    margin: 0px;
+    margin-bottom: 3px;
 }
 
 #contactStreet
@@ -2556,6 +2597,12 @@ img
 
     color: #888888;
     margin: 0px;
+    padding: 0px;
+
+    background-color: red;
+
+    margin-bottom: 3px;
+
 }
 
 #contactVillage
@@ -2566,6 +2613,10 @@ img
 
     color: #888888;
     margin: 0px;
+    padding: 0px;
+
+    background-color: green;
+    margin-bottom: 3px;
 }
 
 
@@ -2578,6 +2629,9 @@ img
     color: #888888;
 
     margin: 0px;
+    padding: 0px;
+
+    background-color: violet;
 }
 
 
@@ -3944,3 +3998,101 @@ img
         height: 925px;
     }
 }
+
+
+/* Sekce kontakt */ 
+
+/* Breakpoints */
+
+
+/* desktop s velkým monitorem */
+@media (max-width: 319px)
+{
+
+   body
+   {
+      display: none;
+   }
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 575px)
+{
+
+    #contactName
+    {
+        font-size: 36px;
+    }
+
+    #contactPosition
+    {
+        font-size: 18px;
+    }
+
+
+    #contactMap
+    {
+        width: 100%;
+        height: auto;
+
+        background-color: pink;
+
+        margin-top: 25px;
+
+        border-radius: 10px;
+    }
+
+    #contactMap iframe 
+    {
+        width:  100%;
+        height: auto; 
+        border: none;
+
+        border-radius: 5px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767px)
+{
+
+    #contactName
+    {
+        font-size: 36px;
+    }
+
+    #contactPosition
+    {
+        font-size: 18px;
+    }
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+
+}
+
+/* notebook/desktop */
+@media screen and (min-width: 992px) and (max-width: 1199px)
+{
+    
+}
+
+/* desktop s velkým monitorem */
+@media screen and (min-width: 1200px) and (max-width: 1399px)
+{
+    
+}
+
+/* desktop s velkým monitorem */
+@media (min-width: 1400px)
+{
+    
+}
+
+
