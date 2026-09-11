@@ -198,7 +198,7 @@ body
     margin-bottom: 30px;
 }
 
-img
+#myimg
 {
     float: left;
     margin-left: 15px;
@@ -2672,11 +2672,13 @@ img
 
 #pastime
 {
-    background-color: purple;
+    background-color: rgba(229, 228, 226, 0.7 );
     width:100%;
     height: auto;
     text-align: start;
-    margin-top: 50px;
+    margin-top: 30px;
+
+    border-radius: 10px;
 }
 
 
@@ -2696,12 +2698,11 @@ img
     align-items: start;
 
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 
 /* Pokusy Galerie */
-
 
 .gallery 
 {
@@ -2710,6 +2711,8 @@ img
     gap: 15px;
     margin-top: 50px;
     margin-bottom: 50px;
+
+    background-color: #DAA520;
 }
 
 .gallery img 
@@ -2860,9 +2863,13 @@ img
 {
     margin-top: 15px;
 
-    color: white;
+    /* color: white; */
+
+    color: #5EEAD4;
+
     font-family: "Inter";
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -2913,7 +2920,8 @@ img
     border: none;
     border-radius: 6px;
 
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9); 
+
     color: black;
 
     font-size: 18px;
