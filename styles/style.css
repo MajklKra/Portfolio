@@ -2677,6 +2677,7 @@ body
     height: auto;
     text-align: start;
     margin-top: 30px;
+    margin-bottom: 30px;
 
     border-radius: 10px;
 }
@@ -2965,11 +2966,11 @@ body
     align-items: start;
 
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 
-#learningSourcesC
+/* #learningSourcesC
 {
     width: 100%;
     height: auto;
@@ -2978,14 +2979,33 @@ body
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+} */
+
+
+#learningSourcesC
+{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: stretch;
+
+    background-color: yellowgreen;
 }
 
 #learningSources-img1
 {
-    width: 200px;
-    height: 80px;
+    /* width: 200px; */
+    width: 100%;
+    /* height: 80px; */
+
+    /* height: auto; */
+
+    height: 60%;
+
     background-color: red;
     margin: 0px;
     object-fit: contain;
@@ -2994,24 +3014,79 @@ body
 
 #learningSources-img2
 {
-    width: 350px;
-    height: auto;
+    /* width: 350px; */
+    width: 100%;
+    height: 60%;
     background-color: blue;
     margin: 0px;
 }
 
-#learningSourcesC-ITnetwork
+#learningSources-img3
+{
+    width: 100%;
+    /* height: 50px; */
+    /* height: auto; */
+    height: 60%;
+    background-color: blue;
+    margin: 0px;
+}
+
+/* #learningSourcesC-ITnetwork
 {
     background-color: green;
-    width: auto;
+    /* width: auto; 
+
+    max-width:  33% !important;
     height: auto;
 }
 
 #learningSourcesC-codework
 {
     background-color: pink;
-    width: auto;
+    /* width: auto; 
+    max-width:  33% !important;
+    height: 100;
 }
+
+#learningSourcesC-udemy
+{
+    background-color: violet !important;
+    /* width: auto; 
+    max-width:  33% !important;
+    min-height: 100% !important;
+    margin: 0px;
+    padding: 0px;
+} */
+
+
+#learningSourcesC a
+{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+
+    /* min-height: 100px; */
+}
+
+#learningSourcesC-ITnetwork
+{
+    background-color: green;
+}
+
+#learningSourcesC-codework
+{
+    background-color: pink;
+}
+
+#learningSourcesC-udemy
+{
+    background-color: violet;
+}
+
 
 #bookOfVisitors
 {
@@ -4104,3 +4179,122 @@ body
 }
 
 
+/* Sekce další zdroje */
+
+@media (max-width: 319px)
+{
+
+   body
+   {
+      display: none;
+   }
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 575px)
+{
+
+    #learningSourcesC
+    {
+        
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+    #learningSources-img1
+    {
+        height: 50px !important;
+        object-position: left center;
+    }
+
+    #learningSources-img2
+    {
+       
+        height: 50px !important;
+        object-position: left center;
+    }
+
+    #learningSources-img3
+    {
+       
+        height: 50px !important;
+        object-position: left center;
+
+    }
+
+    #learningSourcesC a
+    {
+        
+        justify-content: start;
+        align-items: start;
+
+        padding: 5px;
+
+    }
+
+    #learningSourcesC-ITnetwork
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+   #learningSourcesC-udemy
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #learningSourcesC-codework
+    {
+        
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    #learningSourcesC img
+    {
+        object-fit: contain;
+        object-position: left center;
+    }
+    
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767px)
+{
+
+    
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+
+}
+
+/* notebook/desktop */
+@media screen and (min-width: 992px) and (max-width: 1199px)
+{
+    
+}
+
+/* desktop s velkým monitorem */
+@media screen and (min-width: 1200px) and (max-width: 1399px)
+{
+    
+}
+
+/* desktop s velkým monitorem */
+@media (min-width: 1400px)
+{
+    
+}
