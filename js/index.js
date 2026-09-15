@@ -453,20 +453,23 @@ const guestbookModal = document.getElementById("guestbookModal");
 const guestbookClose = document.getElementById("guestbookClose");
 const guestbookForm = document.getElementById("guestbookForm");
 
-guestbookOpen.addEventListener("click", () => {
+guestbookOpen.addEventListener("click", () => 
+{
     guestbookModal.classList.add("active");
 });
 
-guestbookClose.addEventListener("click", () => {
+guestbookClose.addEventListener("click", () => 
+{
     guestbookModal.classList.remove("active");
 });
 
-guestbookForm.addEventListener("submit", async (event) => {
+guestbookForm.addEventListener("submit", async (event) => 
+{
 
     event.preventDefault();
 
     const name = document.getElementById("guestName").value.trim();
-    const email = document.getElementById("guestEmail").value.trim();
+    // const email = document.getElementById("guestEmail").value.trim();
     const message = document.getElementById("guestMessage").value.trim();
 
     const { error } = await supabaseClient
@@ -474,7 +477,7 @@ guestbookForm.addEventListener("submit", async (event) => {
         .insert([
             {
                 name: name,
-                email: email,
+                // email: email,
                 message: message
             }
         ]);
@@ -538,29 +541,6 @@ async function loadGuestbook()
 }
 
 loadGuestbook();
-
-
-/* Hamburger Menu */
-
-
-// const hamburger = document.getElementById("hamburger");
-
-// hamburger.addEventListener("click", () => {
-//     hamburger.classList.toggle("active");
-// });
-
-
-
-// const hamburger = document.getElementById("hamburger");
-// const hamburgerMenu = document.getElementById("navbar-hamburgerMenu");
-
-// hamburger.addEventListener("click", () => {
-
-//     hamburger.classList.toggle("active");
-//     hamburgerMenu.classList.toggle("active");
-
-// });
-
 
 const hamburger = document.getElementById("hamburger");
 const hamburgerMenu = document.getElementById("navbar-hamburgerMenu");
