@@ -54,7 +54,7 @@
 
 @font-face {
   font-family: 'Lexend';
-  src: url('../fonts/Lexend/Lexend-Regular.ttf') format('truetype');
+  src: url('../fonts/lexend/Lexend-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 
@@ -122,35 +122,7 @@ body
     box-sizing: border-box;
 
     min-height: 100vh;
-    /* background: radial-gradient(
-        circle at 75% 50%,
-        #1f6fff 0%,
-        #7fb1ff 35%,
-        #c8d9f5 70%,
-        #eef1f7 100%
-    ); */
-
-    /* background: radial-gradient(
-    circle at 75% 50%,
-    rgba(187,214,255,1) 0%,
-    rgba(249,251,255,1) 100%
-    ); */
-
-        /* background: radial-gradient(
-        circle at 80% 50%,
-        rgba(187,214,255,1) 0%,
-        rgba(220,235,255,1) 50%,
-        rgba(249,251,255,1) 100%
-    ); */
-
-
-    /* background: radial-gradient(
-        circle at 80% 50%,
-        rgba(187,214,255,1) 0%,
-        rgba(220,235,255,1) 50%,
-        rgba(249,251,255,1) 100%
-    );  */
-
+  
     background:
                 radial-gradient(
                     700px 520px at 15% 45%,
@@ -166,12 +138,12 @@ body
                     rgba(249, 251, 255, 1) 100%
                 );
 
-    /* background-color: rgba(249,251,255,1); */
+    /* background-color: red; */
 
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: start;
+    align-items: start; */
 }
 
 
@@ -182,10 +154,14 @@ body
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 
     position: relative;
+
+    /* background-color: blue; */
+
+    margin: 0 auto;
 }
 
 #AboutMe
@@ -2430,6 +2406,15 @@ body
     width:100%;
     height: auto;
     text-align: start;
+
+    background-color: rgba(229, 228, 226, 0.7 );
+
+    padding: 2%;
+
+    box-sizing: border-box;
+
+    border-radius: 10px;
+
 }
 
 
@@ -2683,6 +2668,12 @@ body
     margin-bottom: 30px;
 
     border-radius: 10px;
+
+    /* padding: 20px; */
+
+    padding: 2%;
+
+    box-sizing: border-box;
 }
 
 
@@ -2947,11 +2938,20 @@ body
 #learningSources
 {
     /* background-color: purple; */
+
+    background-color: rgba(229, 228, 226, 0.7 );
+
     width:100%;
     height: auto;
     text-align: start;
 
     margin-bottom: 30px;
+
+    border-radius: 10px;
+
+    padding: 2%;
+
+    box-sizing: border-box;
 }
 
 
@@ -3890,7 +3890,7 @@ body
         justify-content: end;
         align-items: center;
 
-        background-color: yellow;
+        /* background-color: yellow; */
     }
 
     #navbar-c2
