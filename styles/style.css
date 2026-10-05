@@ -2407,7 +2407,9 @@ body
     height: auto;
     text-align: start;
 
-    background-color: rgba(229, 228, 226, 0.7 );
+    /*  background-color: rgba(229, 228, 226, 0.7 ); */
+
+    background-color: rgba(241, 245, 253, 1 );
 
     padding: 2%;
 
@@ -2660,7 +2662,10 @@ body
 
 #pastime
 {
-    background-color: rgba(229, 228, 226, 0.7 );
+    /* background-color: rgba(229, 228, 226, 0.7 ); */
+
+    background-color: rgba(241, 245, 253, 1 );
+
     width:100%;
     height: auto;
     text-align: start;
@@ -2939,7 +2944,9 @@ body
 {
     /* background-color: purple; */
 
-    background-color: rgba(229, 228, 226, 0.7 );
+    /* background-color: rgba(229, 228, 226, 0.7 ); */
+
+    background-color: rgba(241, 245, 253, 1 );
 
     width:100%;
     height: auto;
